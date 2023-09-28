@@ -1,4 +1,4 @@
-# SCARAB Hexapod Robot Control Software
+# SCARAB Robot Source Code
 
 ![SCARAB Hexapod Robot](https://i.postimg.cc/1XtkvYSs/Scarab-Skin.png)
 
