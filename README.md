@@ -60,7 +60,7 @@ Contributions to this project are welcome. If you have any improvements, bug fix
 
 **Note:** This code was written with the Arduino Mega 2560 and Giga microcontrollers in mind, with the IO pins numbering 54.
 
-For more information, please contact the engineer, Michael Chukwukere, on [LinkedIn](https://www.linkedin.com/in/chxxvo) or [Behance](https://www.behance.net/MikeChukwu)
+For more information, please contact the engineer, Michael Chukwukere, on [LinkedIn](https://www.linkedin.com/in/chxxvo) or [Behance](https://www.behance.net/chxxvo)
 
 
 
