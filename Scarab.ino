@@ -83,7 +83,7 @@ void setup() {
     
     RC2.attach(49);
     RF2.attach(50);
-    RT3.attach(51);
+    RT2.attach(51);
     
     RC3.attach(46);
     RF3.attach(47);
