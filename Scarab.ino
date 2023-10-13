@@ -7,7 +7,7 @@ Servo LC1, LF1, LT1;	// This includes the Servos that control the joints of the 
 Servo LC2, LF2, LT2;	// This includes the Servos that control the joints of the second leg of the robot, LC2 (Left Coxa 2), LF2 (Left Femur 2), LT2 (Left Tibia 2)
 Servo LC3, LF3, LT3;	// This includes the Servos that control the joints of the third leg of the robot, LC3 (Left Coxa 3), LF3 (Left Femur 3), LT3 (Left Tibia 3)
 Servo RC1, RF1, RT1;	// This includes the Servos that control the joints of the first leg of the robot, RC1 (Right Coxa 1), RF1 (Right Femur 1), RT1 (Righit Tibia 1)
-Servo RC2, RF2, RT2;	// This includes the Servos that control the joints of the second leg of the robot, RC2 (Right Coxa 2), RF2 (Right Femur 2), RT1 (Righit Tibia 2)
+Servo RC2, RF2, RT2;	// This includes the Servos that control the joints of the second leg of the robot, RC2 (Right Coxa 2), RF2 (Right Femur 2), RT2 (Righit Tibia 2)
 Servo RC3, RF3, RT3;	// This includes the Servos that control the joints of the third leg of the robot, RC3 (Right Coxa 3), RF3 (Right Femur 3), RT3 (Righit Tibia 3)
 Servo CLAW;				// This servo controls the mandible gear of the robot
 
