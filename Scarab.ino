@@ -7,7 +7,7 @@ Servo LC1, LF1, LT1;	// This includes the Servos that control the joints of the 
 Servo LC2, LF2, LT2;	// This includes the Servos that control the joints of the second leg of the robot, LC2 (Left Coxa 2), LF2 (Left Femur 2), LT2 (Left Tibia 2)
 Servo LC3, LF3, LT3;	// This includes the Servos that control the joints of the third leg of the robot, LC3 (Left Coxa 3), LF3 (Left Femur 3), LT3 (Left Tibia 3)
 Servo RC1, RF1, RT1;	// This includes the Servos that control the joints of the first leg of the robot, RC1 (Right Coxa 1), RF1 (Right Femur 1), RT1 (Righit Tibia 1)
-Servo RC2, RF2, RT3;	// This includes the Servos that control the joints of the second leg of the robot, RC2 (Right Coxa 2), RF2 (Right Femur 2), RT1 (Righit Tibia 2)
+Servo RC2, RF2, RT2;	// This includes the Servos that control the joints of the second leg of the robot, RC2 (Right Coxa 2), RF2 (Right Femur 2), RT1 (Righit Tibia 2)
 Servo RC3, RF3, RT3;	// This includes the Servos that control the joints of the third leg of the robot, RC3 (Right Coxa 3), RF3 (Right Femur 3), RT3 (Righit Tibia 3)
 Servo CLAW;				// This servo controls the mandible gear of the robot
 
@@ -51,7 +51,7 @@ int home_RT1 = 90;
 
 int home_RC2 = 90;
 int home_RF2 = 90;
-int home_RT3 = 90;
+int home_RT2 = 90;
 
 int home_RC3 = 90;
 int home_RF3 = 90;
@@ -236,7 +236,7 @@ void set_home_pos()
     
     RC2.write(home_RC2);
     RF2.write(home_RF2);
-    RT3.write(home_RT3);
+    RT2.write(home_RT2);
     
     RC3.write(home_RC3);
     RF3.write(home_RF3);
@@ -260,7 +260,7 @@ void move_frwd(){
         LF3.write(home_LF3 - FM1);
         LT3.write(home_LT3 - FM1);
         RF2.write(home_RF2 - FM1);
-        RT3.write(home_RT3 - FM1);
+        RT2.write(home_RT3 - FM1);
         FM1++;
     }
     
@@ -283,7 +283,7 @@ void move_frwd(){
         LF3.write(home_LF3 + FM3);
         LT3.write(home_LF3 + FM3);
         RF2.write(home_RF2 + FM3);
-        RT3.write(home_RT3 + FM3);
+        RT2.write(home_RT2 + FM3);
         FM3++;
     }
     
@@ -382,7 +382,7 @@ void move_bwd(){
         LF3.write(home_LF3 - FM1);
         LT3.write(home_LT3 - FM1);
         RF2.write(home_RF2 - FM1);
-        RT3.write(home_RT3 - FM1);
+        RT2.write(home_RT2 - FM1);
         FM1++;
     }
     
@@ -403,7 +403,7 @@ void move_bwd(){
         LF3.write(home_LF3 + FM3);
         LT3.write(home_LF3 + FM3);
         RF2.write(home_RF2 + FM3);
-        RT3.write(home_RT3 + FM3);
+        RT2.write(home_RT2 + FM3);
         FM3++;
     }
     
@@ -495,7 +495,7 @@ void rotate_left(){
         LF3.write(home_LF3 - FM1);
         LT3.write(home_LT3 - FM1);
         RF2.write(home_RF2 - FM1);
-        RT3.write(home_RT3 - FM1);
+        RT2.write(home_RT2 - FM1);
         FM1++;
     }
     
@@ -517,7 +517,7 @@ void rotate_left(){
         LF3.write(home_LF3 + FM3);
         LT3.write(home_LT3 + FM3);
         RF2.write(home_RF2 + FM3);
-        RT3.write(home_RT3 + FM3);
+        RT2.write(home_RT2 + FM3);
         FM3++;
     }
     
@@ -615,7 +615,7 @@ void rotate_right(){
         LF3.write(home_LF3 - FM1);
         LT3.write(home_LT3 - FM1);
         RF2.write(home_RF2 - FM1);
-        RT3.write(home_RT3 - FM1);
+        RT2.write(home_RT2 - FM1);
         FM1++;
     }
     
@@ -637,7 +637,7 @@ void rotate_right(){
         LF3.write(home_LF3 + FM3);
         LT3.write(home_LT3 + FM3);
         RF2.write(home_RF2 + FM3);
-        RT3.write(home_RT3 + FM3);
+        RT2.write(home_RT2 + FM3);
         FM3++;
     }
     
@@ -738,7 +738,7 @@ void move_right(){
         RT1.write(home_RT1 + FM1*2);
         
         RF2.write(home_RF2 + FM1);
-        RT3.write(home_RT3 - FM1);
+        RT2.write(home_RT2 - FM1);
         
         RF3.write(home_RF3 - FM1);
         RT3.write(home_RT3 + FM1*2);
@@ -767,7 +767,7 @@ void move_right(){
         LT3.write(home_LT3 + FM1 - FM3);
         
         RF2.write(home_RF2 + FM1 - FM3);
-        RT3.write(home_RT3 - FM1 + FM3);
+        RT2.write(home_RT2 - FM1 + FM3);
         FM3++;
     }
     
@@ -793,7 +793,7 @@ void move_left(){
         RT1.write(home_RT1 + FM1);
         
         RF2.write(home_RF2 + FM1);
-        RT3.write(home_RT3 - FM1*2);
+        RT2.write(home_RT2 - FM1*2);
         
         RF3.write(home_RF3 + FM1);
         RT3.write(home_RT3 + FM1);
